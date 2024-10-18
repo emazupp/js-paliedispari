@@ -13,15 +13,20 @@ function convertToArray(word) {
 
 function isPalindrome(word) {
   let palindrome = true;
-  for (let i = 0; i < word.length / 2 && palindrome; i++) {
-    palindrome = word[i] == word[word.length - 1 - i] ? true : false;
+  const wordArray = convertToArray(word);
+  for (let i = 0; i < wordArray.length / 2 && palindrome; i++) {
+    palindrome =
+      wordArray[i] == wordArray[wordArray.length - 1 - i] ? true : false;
   }
   return palindrome;
 }
 
 const word = prompt("Inserisci una parola per controllare se palindroma:");
-let wordConverted = convertToArray(word);
-console.log(isPalindrome(wordConverted));
+console.log(
+  isPalindrome(word)
+    ? `'La parola ${word} è palindroma'`
+    : `La parola ${word} NON è palindroma`
+);
 
 // ! TRACCIA
 
