@@ -13,11 +13,8 @@ function convertToArray(word) {
 
 function isPalindrome(word) {
   let palindrome = true;
-  /* console.log(word.length / 2); */
   for (let i = 0; i < word.length / 2 && palindrome; i++) {
     palindrome = word[i] == word[word.length - 1 - i] ? true : false;
-    /* console.log("word[i]: " + word[i]);
-    console.log("word[word.length - 1 - i]: " + word[word.length - 1 - i]); */
   }
   return palindrome;
 }
