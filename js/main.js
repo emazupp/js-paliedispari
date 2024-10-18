@@ -54,6 +54,9 @@ const userChoice = prompt(
 const userNumber = parseInt(prompt("Inserisci un numero da 1 a 5"));
 const pcNumber = generateNumber1to5();
 const sumNumbers = userNumber + pcNumber;
+
+// ! OUTPUT
+
 console.log(`Il tuo numero è: "${userNumber}"`);
 console.log(`Il numero del computer è: "${pcNumber}"`);
-console.log(evenOdd(sumNumbers) == userChoice ? "Hai perso" : "Hai vinto");
+console.log(evenOdd(sumNumbers) == userChoice ? "Hai vinto" : "Hai perso");
