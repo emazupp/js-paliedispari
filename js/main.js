@@ -14,15 +14,16 @@ function convertToArray(word) {
 function isPalindrome(word) {
   let palindrome = true;
   for (let i = 0; i < word.length && palindrome; i++) {
-    word[i] == word[word.length - 1 - i];
-    console.log("word[i]: " + word[i]);
-    console.log("word[word.length - 1 - i]: " + word[word.length - 1 - i]);
+    palindrome = word[i] == word[word.length - 1 - i] ? true : false;
+    /* console.log("word[i]: " + word[i]);
+    console.log("word[word.length - 1 - i]: " + word[word.length - 1 - i]); */
   }
+  return palindrome;
 }
 
-const word = "anna";
+const word = prompt("Inserisci una parola per controllare se palindroma:");
 let wordConverted = convertToArray(word);
-isPalindrome(wordConverted);
+console.log(isPalindrome(wordConverted));
 
 // ! TRACCIA
 
