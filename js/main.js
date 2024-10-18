@@ -6,7 +6,7 @@ Creare una funzione per capire se la parola inserita è palindroma */
 
 // ! SVOLGIMENTO
 
-/* function convertToArray(word) {
+function convertToArray(word) {
   const arrayWord = [...word];
   return arrayWord;
 }
@@ -26,7 +26,7 @@ console.log(
   isPalindrome(word)
     ? `'La parola "${word}" è palindroma'`
     : `La parola "${word}" NON è palindroma`
-); */
+);
 
 // ! TRACCIA
 
