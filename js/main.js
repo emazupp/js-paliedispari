@@ -8,6 +8,9 @@ Creare una funzione per capire se la parola inserita è palindroma */
 
 function isPalindrome(word) {}
 
+const word = "anna";
+console.log(word[0]);
+
 // ! TRACCIA
 
 /* Pari e Dispari
